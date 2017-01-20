@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'n^6x=c_ez1aeq^*w3@7w*p$f1vv+4)l)$on-!--7*#f!*^jl92'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','pythonanywhere.com']
+ALLOWED_HOSTS = ["mysampleblog.pythonanywhere.com"]
 
 
 # Application definition
@@ -120,3 +120,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
+#MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
